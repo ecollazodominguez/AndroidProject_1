@@ -4,51 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/reto1"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toTopOf="@+id/reto3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/reto2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@mipmap/ic_launcher_round"
-        app:layout_constraintBottom_toTopOf="@+id/reto4"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toEndOf="@+id/reto1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/reto3"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="208dp"
-        android:background="@mipmap/ic_launcher"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/ic_launcher_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reto1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/reto4"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="208dp"
-        android:background="@android:drawable/btn_star_big_on"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_launcher_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/reto3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reto2"
+        app:layout_constraintVertical_bias="0.92" />
 
     <TextView
         android:id="@+id/textView"
@@ -60,8 +60,8 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.049" />
 </androidx.constraintlayout.widget.ConstraintLayout>
