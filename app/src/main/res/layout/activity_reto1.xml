@@ -6,4 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".Reto1Activity">
 
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="350dp"
+        android:layout_height="118dp"
+        android:fontFamily="monospace"
+        android:text="@string/pregunta"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ImageView
+        android:id="@+id/imgPregunta"
+        android:layout_width="187dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/imgpregunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta"
+        app:srcCompat="@color/design_default_color_primary_dark"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/r1button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/r1button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPregunta" />
+
+    <Button
+        android:id="@+id/r2button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/r2button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r1button" />
+
+    <Button
+        android:id="@+id/r3button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r3button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r2button" />
+
+    <Button
+        android:id="@+id/helpbutton"
+        android:layout_width="64dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/ayuda"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r3button"
+        app:layout_constraintVertical_bias="0.529" />
 </androidx.constraintlayout.widget.ConstraintLayout>

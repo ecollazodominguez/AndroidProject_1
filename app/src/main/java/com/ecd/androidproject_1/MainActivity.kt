@@ -1,13 +1,12 @@
 package com.ecd.androidproject_1
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-
-
-
+import org.jetbrains.anko.toast
 
 
 const val RETO1_REQUEST = 1
@@ -45,6 +44,25 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(intent, RETO4_REQUEST)}
         }
     }
+
+    //Recogemos los resultados
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == RETO1_REQUEST) {
+            if (resultCode == Activity.RESULT_OK) {
+
+                val result = data?.getBooleanExtra("resp", false)
+                toast("¡Enhorabuena has acertado!")
+                reto1.setEnabled(false) //desactivamos el boton
+
+            }else{
+                toast("Has fallado... ¡Vuelve a intentarlo!")
+            }
+
+
+        }
+    }
+
 
     //Método para manetener la app en pantalla completa para ocultar los botones de barra.
     override fun onWindowFocusChanged(hasFocus: Boolean) {

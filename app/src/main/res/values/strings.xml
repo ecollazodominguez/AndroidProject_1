@@ -4,4 +4,10 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="pregunta">¿Cómo se llama la actriz que hace de viuda negra?</string>
+    <string name="imgpregunta">imgPregunta</string>
+    <string name="r1button">Angelina Jolie</string>
+    <string name="r2button">Scarlett Johansson</string>
+    <string name="r3button">Ellen Page</string>
+    <string name="ayuda">Ayuda</string>
 </resources>
