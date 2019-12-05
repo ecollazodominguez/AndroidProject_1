@@ -2,6 +2,8 @@ package com.ecd.androidproject_1
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -60,6 +62,40 @@ class MainActivity : AppCompatActivity() {
             }
 
 
+        }
+
+        if (requestCode == RETO2_REQUEST) {
+            if (resultCode == Activity.RESULT_OK) {
+
+                val imageBitmap = data?.extras?.get("foto") as Bitmap
+                var pixel1 = imageBitmap.getPixel(0,0)
+                var redValue = Color.red(pixel1)
+                var blueValue = Color.blue(pixel1)
+                var greenValue = Color.green(pixel1)
+
+                if (greenValue > blueValue && greenValue > redValue){
+                    var pixel2 = imageBitmap.getPixel(5, 5)
+                    var redValue = Color.red(pixel2)
+                    var blueValue = Color.blue(pixel2)
+                    var greenValue = Color.green(pixel2)
+                    if (greenValue > blueValue && greenValue > redValue){
+                        var pixel3 = imageBitmap.getPixel(15,15)
+                        var redValue = Color.red(pixel3)
+                        var blueValue = Color.blue(pixel3)
+                        var greenValue = Color.green(pixel3)
+                        if (greenValue > blueValue && greenValue > redValue){
+                            toast("¡¡Bien hecho!!")
+                            reto2.setEnabled(false)
+                        }else{
+                            toast("Has fallado... ¡Vuelve a intentarlo!")
+                        }
+                    }else{
+                        toast("Has fallado... ¡Vuelve a intentarlo!")
+                    }
+                }else{
+                    toast("Has fallado... ¡Vuelve a intentarlo!")
+                }
+            }
         }
     }
 

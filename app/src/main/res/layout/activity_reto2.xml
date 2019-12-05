@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Reto2Activity">
 
+    <TextView
+        android:id="@+id/reto2texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/reto2texto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/okbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebutton" />
+
+    <ImageView
+        android:id="@+id/imagebutton"
+        android:layout_width="235dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/ic_launcher_round"
+        android:contentDescription="@string/imagebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reto2texto"
+        tools:srcCompat="@tools:sample/avatars" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
