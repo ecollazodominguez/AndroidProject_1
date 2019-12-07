@@ -14,4 +14,11 @@
     <string name="okbutton">Aceptar</string>
     <string name="camerabutton">camerabutton</string>
     <string name="imagebutton">imagebutton</string>
+    <string name="retoText">¡Elige tu reto!</string>
+    <string name="reto3pregunta">Calcula esta operación</string>
+    <string name="sumatext">+</string>
+    <string name="num2">3</string>
+    <string name="productotext">x</string>
+    <string name="num3">2</string>
+    <string name="num1">6</string>
 </resources>

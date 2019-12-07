@@ -23,11 +23,8 @@ class Reto1Activity : AppCompatActivity() {
 
     //Método para seleccionar la respuesta correcta, recibe un int que será la posición de la respuesta, si no es 2, es falso, sino, true
     private fun respuesta(v: View, r:Int){
-        var resp = false
         if (r == 2){
-            resp = true
             val intent = Intent()
-            intent.putExtra("resp", resp)
             setResult(Activity.RESULT_OK, intent)
             finish()
         }

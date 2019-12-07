@@ -37,11 +37,11 @@
         android:layout_width="235dp"
         android:layout_height="247dp"
         android:layout_marginTop="100dp"
-        android:background="@mipmap/ic_launcher_round"
         android:contentDescription="@string/imagebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reto2texto"
+        app:srcCompat="@drawable/reto2"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

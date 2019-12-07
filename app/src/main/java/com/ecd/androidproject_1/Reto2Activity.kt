@@ -11,6 +11,7 @@ import android.provider.MediaStore
 import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_reto1.*
 import kotlinx.android.synthetic.main.activity_reto2.*
 import org.jetbrains.anko.backgroundDrawable
 import org.jetbrains.anko.toast
@@ -27,7 +28,7 @@ class Reto2Activity : AppCompatActivity() {
         okbutton.setOnClickListener { volver(it) }
     }
 
-
+    //Método que pide permisos y abre la cámara con un result para guardar la foto
     private fun camera(v:View){
         //Chequea si tiene permisos
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
@@ -63,10 +64,11 @@ class Reto2Activity : AppCompatActivity() {
         }
     }
 
+    //método para volver a la activity principal finalizando esta
     private fun volver(v:View){
         finish()
     }
-
+    // recogemos el resultado mostrando la foto en el botón y devolvemos el resultado al main
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
