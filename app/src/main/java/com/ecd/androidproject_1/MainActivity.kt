@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 if (resultCode == Activity.RESULT_OK) {
 
                     toast("¡Enhorabuena has acertado!")
-                    reto1.setBackgroundResource(R.drawable.reto1grey) //cambiamos el icono a gris
+                    reto1.setBackgroundResource(R.drawable.reto1) //cambiamos el icono a color
                     reto1.setEnabled(false) //desactivamos el boton
                     retoscompletados += 1
                     //si ganas todos los retos
@@ -90,6 +90,8 @@ class MainActivity : AppCompatActivity() {
             if (requestCode == RETO2_REQUEST) {
                 if (resultCode == Activity.RESULT_OK) {
 
+                    //Recogemos la foto, accedemos al pixel 0,0,recogemos los colores y comprobamos si es verde
+                    //hacemos 3 comprobaciones para cerciorarnos.
                     val imageBitmap = data?.extras?.get("foto") as Bitmap
                     var pixel1 = imageBitmap.getPixel(0, 0)
                     var redValue = Color.red(pixel1)
@@ -97,18 +99,18 @@ class MainActivity : AppCompatActivity() {
                     var greenValue = Color.green(pixel1)
 
                     if (greenValue > blueValue && greenValue > redValue) {
-                        var pixel2 = imageBitmap.getPixel(5, 5)
+                        var pixel2 = imageBitmap.getPixel(3, 0)
                         var redValue = Color.red(pixel2)
                         var blueValue = Color.blue(pixel2)
                         var greenValue = Color.green(pixel2)
                         if (greenValue > blueValue && greenValue > redValue) {
-                            var pixel3 = imageBitmap.getPixel(15, 15)
+                            var pixel3 = imageBitmap.getPixel(6, 0)
                             var redValue = Color.red(pixel3)
                             var blueValue = Color.blue(pixel3)
                             var greenValue = Color.green(pixel3)
                             if (greenValue > blueValue && greenValue > redValue) {
                                 toast("¡¡Bien hecho!!")
-                                reto2.setBackgroundResource(R.drawable.reto2grey) //cambiamos el icono a gris
+                                reto2.setBackgroundResource(R.drawable.reto2) //cambiamos el icono a color
                                 reto2.setEnabled(false)
                                 retoscompletados += 1
                                 //si ganas todos los retos
@@ -131,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             if (requestCode == RETO3_REQUEST) {
                 if (resultCode == Activity.RESULT_OK) {
                     toast("¡Enhorabuena has acertado!")
-                    reto3.setBackgroundResource(R.drawable.reto3grey) //cambiamos el icono a gris
+                    reto3.setBackgroundResource(R.drawable.reto3) //cambiamos el icono a color
                     reto3.setEnabled(false) //desactivamos el boton
                     retoscompletados += 1
                     //si ganas todos los retos
@@ -148,7 +150,7 @@ class MainActivity : AppCompatActivity() {
             if (requestCode == RETO4_REQUEST) {
                 if (resultCode == Activity.RESULT_OK) {
                     toast("¡Enhorabuena has acertado!")
-                    reto4.setBackgroundResource(R.drawable.reto4grey) //cambiamos el icono a gris
+                    reto4.setBackgroundResource(R.drawable.reto4) //cambiamos el icono a color
                     reto4.setEnabled(false) //desactivamos el boton
                     retoscompletados += 1
                     //si ganas todos los retos

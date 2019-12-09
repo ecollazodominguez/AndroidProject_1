@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/reto1"
+        android:background="@drawable/reto1grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -23,7 +23,7 @@
         android:layout_height="150dp"
         android:layout_marginTop="140dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/reto2"
+        android:background="@drawable/reto2grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -33,7 +33,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="115dp"
-        android:background="@drawable/reto3"
+        android:background="@drawable/reto3grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reto1"
@@ -44,7 +44,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/reto4"
+        android:background="@drawable/reto4grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reto2"

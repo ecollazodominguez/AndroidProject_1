@@ -28,6 +28,8 @@ class Reto2Activity : AppCompatActivity() {
         okbutton.setOnClickListener { volver(it) }
     }
 
+
+
     //Método que pide permisos y abre la cámara con un result para guardar la foto
     private fun camera(v:View){
         //Chequea si tiene permisos
